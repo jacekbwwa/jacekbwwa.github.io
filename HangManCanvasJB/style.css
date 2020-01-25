@@ -1,0 +1,203 @@
+/* author Jacek Byzdra https://www.linkedin.com/in/jacek-byzdra/ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+	grid-template-rows: 1fr 6fr 0.5fr;
+	grid-template-areas: "purple purple" "blue yellow" "white white";
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+}
+.container .purple {
+	width: 100%;
+	font-size: 4em;
+	text-align: center;
+	font-family: 'Georgia', serif;
+	font-family: 'Tangerine', bold;
+	color: white;
+}
+.container .blue {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Georgia', serif;
+	font-family: 'Crimson Text', serif;
+}
+.container .yellow {
+	width: 100%;
+	text-align: center;
+}
+.container .white {
+	width: 100%;
+	text-align: center;
+}
+.yellow {
+	background-color: #fffdc4;
+	grid-area: yellow;
+}
+.blue {
+	background-color: #2d80d2;
+	grid-area: blue;
+}
+.purple {
+	background-color: #421a8e;
+	grid-area: purple;
+}
+.white {
+	background-color: #ffffff;
+	grid-area: white;
+}
+canvas {
+	margin-bottom: 10;
+}
+#innerblue {
+	padding-top: 120px;
+}
+#innerpurple {
+	padding-top: 30px;
+}
+#inneryellow {
+	padding-left: 4em;
+}
+#innerwhite {
+	padding-left: 0;
+}
+#guesslet {
+	font-size: 1.5em;
+	white-space: normal;
+	color: #00bfff;
+}
+#gamestat {
+	font-size: 0.75em;
+	white-space: normal;
+}
+#gamest {
+	font-size: 0.75em;
+	color: #00bfff;
+}
+#innerbl1 {
+	text-align: center;
+	padding-left: 0.75em;
+}
+#worhidden {
+	color: white;
+}
+::placeholder {
+	color: blue;
+	font-size: 0.75em;
+}
+@media (max-width: 767px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 8fr;
+		grid-template-rows: 1fr 8fr 0.5fr;
+		grid-template-areas: "purple yellow" "purple blue" "purple white";
+		width: 100%;
+		height: 100vh;
+		margin: 0 auto 0 auto;
+	}
+	.container .blue {
+		width: 100%;
+		font-size: 16px;
+		text-align: center;
+		font-family: 'Georgia', serif;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.container .purple {
+		width: 100%;
+		font-size: 1em;
+		font-family: 'Georgia', serif;
+		font-family: 'Crimson Text', serif;
+		text-transform: uppercase;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+	.container .white {
+		width: 100%;
+		text-align: center;
+	}
+	#innerblue {
+		padding-top: 0;
+	}
+	#innerpurple {
+		padding-top: 0;
+		padding-right: 0.5em;
+	}
+	#inneryellow {
+		padding-left: 0;
+	}
+	#innerwhite {
+		padding-left: 0;
+	}
+	#guesslet {
+		font-size: 0.75em;
+		white-space: pre;
+		color: #00bfff;
+	}
+	#gamestat {
+		font-size: 0.75em;
+		white-space: pre;
+	}
+}
+
+/* author Jacek Byzdra https://www.linkedin.com/in/jacek-byzdra/ */
+
+@media (max-width: 480px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 8fr;
+		grid-template-rows: 5fr 3fr 0.5fr;
+		grid-template-areas: "purple yellow" "purple blue" "purple white";
+		width: 94%;
+		height: 100vh;
+		margin: 0 auto 0 auto;
+	}
+	.container .blue {
+		width: 100%;
+		font-size: 16px;
+		text-align: center;
+		font-family: 'Georgia', serif;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.container .purple {
+		width: 100%;
+		font-size: 1em;
+		font-family: 'Georgia', serif;
+		font-family: 'Crimson Text', serif;
+		text-transform: uppercase;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+	.container .white {
+		width: 100%;
+		text-align: center;
+	}
+	#innerblue {
+		padding-top: 0;
+	}
+	#innerpurple {
+		padding-top: 0;
+		padding-right: 0.5em;
+	}
+	#inneryellow {
+		padding-left: 0;
+	}
+	#innerwhite {
+		padding-left: 0;
+	}
+	#guesslet {
+		font-size: 0.75em;
+		white-space: pre;
+		color: #00bfff;
+	}
+	#gamestat {
+		font-size: 0.75em;
+		white-space: pre;
+	}
+}
