@@ -138,7 +138,7 @@ canvas {
 		grid-template-areas: "purple yellow" "purple blue";
 		width: 94%;
 		height: 100vh;
-		margin: 3%;
+		margin: 0 auto 0 auto;
 	}
 	.container .blue {
 		width: 100%;
