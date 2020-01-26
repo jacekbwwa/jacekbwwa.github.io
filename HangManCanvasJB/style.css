@@ -8,10 +8,11 @@
 .container {
 	display: grid;
 	grid-template-columns: 5fr 5fr;
-	grid-template-rows: 1fr 6fr 0.5fr;
-	grid-template-areas: "purple purple" "blue yellow" "white white";
+	grid-template-rows: 1fr 6fr;
+	grid-template-areas: "purple purple" "blue yellow";
 	width: 100%;
 	height: 100vh;
+	max-height: calc(100vh);
 	margin: 0 auto 0 auto;
 }
 .container .purple {
@@ -33,10 +34,6 @@
 	width: 100%;
 	text-align: center;
 }
-.container .white {
-	width: 100%;
-	text-align: center;
-}
 .yellow {
 	background-color: #fffdc4;
 	grid-area: yellow;
@@ -49,10 +46,6 @@
 	background-color: #421a8e;
 	grid-area: purple;
 }
-.white {
-	background-color: #ffffff;
-	grid-area: white;
-}
 canvas {
 	margin-bottom: 10;
 }
@@ -64,9 +57,6 @@ canvas {
 }
 #inneryellow {
 	padding-left: 4em;
-}
-#innerwhite {
-	padding-left: 0;
 }
 #guesslet {
 	font-size: 1.5em;
@@ -96,15 +86,17 @@ canvas {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 8fr;
-		grid-template-rows: 1fr 8fr 0.5fr;
-		grid-template-areas: "purple yellow" "purple blue" "purple white";
+		grid-template-rows: 8fr 2fr;
+		grid-template-areas: "purple yellow" "purple blue";
 		width: 100%;
+		height: 100%;
 		height: 100vh;
+		max-height: calc(100vh);
 		margin: 0 auto 0 auto;
 	}
 	.container .blue {
 		width: 100%;
-		font-size: 16px;
+		font-size: 1em;
 		text-align: center;
 		font-family: 'Georgia', serif;
 		font-family: 'Roboto Condensed', sans-serif;
@@ -118,21 +110,15 @@ canvas {
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 	}
-	.container .white {
-		width: 100%;
-		text-align: center;
-	}
 	#innerblue {
 		padding-top: 0;
 	}
 	#innerpurple {
 		padding-top: 0;
-		padding-right: 0.5em;
+		align-items: center;
+		justify-content: center;
 	}
 	#inneryellow {
-		padding-left: 0;
-	}
-	#innerwhite {
 		padding-left: 0;
 	}
 	#guesslet {
@@ -152,10 +138,12 @@ canvas {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 8fr;
-		grid-template-rows: 5fr 3fr 0.5fr;
-		grid-template-areas: "purple yellow" "purple blue" "purple white";
-		width: 94%;
+		grid-template-rows: 8fr 2fr;
+		grid-template-areas: "purple yellow" "purple blue";
+		width: 100%;
+		height: 100%;
 		height: 100vh;
+		max-height: calc(100vh);
 		margin: 0 auto 0 auto;
 	}
 	.container .blue {
@@ -174,22 +162,19 @@ canvas {
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 	}
-	.container .white {
-		width: 100%;
-		text-align: center;
-	}
 	#innerblue {
 		padding-top: 0;
 	}
 	#innerpurple {
+		width: 100%;
 		padding-top: 0;
 		padding-right: 0.5em;
 	}
 	#inneryellow {
 		padding-left: 0;
 	}
-	#innerwhite {
-		padding-left: 0;
+	#inneryellow2 {
+		padding-top: 0;
 	}
 	#guesslet {
 		font-size: 0.75em;
