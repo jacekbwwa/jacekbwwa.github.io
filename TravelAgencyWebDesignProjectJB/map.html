@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- initials JB -->
+<html>
+
+<head>
+	<meta name="description" content="Javascript WebDesign Project; Grid Layout and Responsive Web Design">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Contact Form,Grid Layout,Responsive Web Design,Coloured Letters,Travel, Mounaineering">
+	<meta name="author" content="Jacek Byzdra">
+	<meta name="copyright" content="Copyright owner" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/map.css" type="text/css">
+
+</head>
+
+<body>
+	<div class="warning">This web project only works in browsers that support CSS Grid Layout. If you can see this message, then your browser isn't supporting Grid.</div>
+	<header>
+		<nav class="Panel_Row1HeaderBtns">
+			<a id="btn" class="btn" href="packages.html">TOURS &#10132;</a>
+			<a id="btn2" class="btn2" href="index.html">HOME &#10132;</a>
+			<a id="btn3" class="btn3" href="map.html">MAP &#10132;</a>
+			<a id="btn4" class="btn4" href="book.html">BOOK &#10132;</a>
+		</nav>
+
+	</header>
+	<main>
+		<div class="Panel_Row2Imgs">
+			<div class="gridA1Images">
+				<figure><img src="./images/zakopane2.png" alt="Smiley face"></figure>
+			</div>
+		</div>
+
+		<div class="Panel_Row3Text">
+			<div class="contextRow2">
+				<div class="contextEntryRow2">
+					<h3><a href="https://goo.gl/maps/TSh7EVgZErsQkJr86" class="fa fa-google" style="font-size:0.75rem;color:white"> &#10132; Zakopane</a></h3>
+				</div>
+			</div>
+		</div>
+		<div class="Panel_Row4Imgs">
+			<div class="gridA1Images">
+				<figure><img src="./images/zakopane4.png" alt="Smiley face"></figure>
+			</div>
+		</div>
+		<div class="Panel_Row6Video">
+			<div class="videoContainer">
+				<video id="myVideo" preload="none" poster="./images/TatraTravel2.png" controls>
+					<source src="./movies/tatry4.mp4" type="video/mp4">
+				</video>
+				<div id="controls">
+					<button id="start">&#10148;</button>
+					<button id="stop" disabled>&#10066;</button>
+					<button id="pause" disabled>&#10073;&#10073;</button>
+					<button id="volUp" title="VolUp" disabled>&#10138;</button>
+					<button id="volDn" title="VolDn" disabled>&#10136;</button>
+					<button id="mute" disabled>&#9835;</button>
+				</div>
+				<div id="loadBar">
+					<div id="loadStatus"></div>
+					<div id="slideButton"></div>
+				</div>
+			</div>
+		</div>
+		<div class="Panel_Row5Imgs">
+			<div class="gridA1Images">
+				<figure><img id="backpacker" src="images/backpacker.png" alt="Smiley face"></figure>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="js/backpacker.js"></script>
+	<script type="text/javascript" src="js/Packages.js"></script>
+
+
+</body>
+
+</html>
