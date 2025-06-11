@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Javascript MasterMind" />
+        <meta name="keywords" content="HTML, JavaScript" />
+        <meta name="author" content="Jacek Byzdra" />
+        <meta name="copyright" content="Copyright owner" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mastermind Game</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="top">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ><img
+                    alt="License Creative Commons"
+                    style="border-width: 0"
+                    src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"
+            /></a>
+        </div>
+        <h1>Mastermind Game</h1>
+        <div id="game">
+            <div id="controls">
+                <div id="colorselection"></div>
+                <button id="submitguess">Submit Guess</button>
+                <button id="reset">Reset Game</button>
+            </div>
+            <div id="message"></div>
+            <div id="secretcode"></div>
+            <div id="board"></div>
+        </div>
+        <script type="module">
+            import { SelectedColor, HandleGuess, Game } from "./mastermind.js";
+
+            // Delegate color button clicks to Action
+            const colorselect = document.getElementById("colorselection");
+            colorselect.addEventListener("click", (e) => {
+                if (e.target && e.target.matches("button.colorsel")) {
+                    SelectedColor.setSelectedColor(e.target.dataset.color);
+                }
+            });
+
+            // Hooking up event listeners
+            document.getElementById("submitguess").addEventListener("click", HandleGuess.submitGuess);
+            document.getElementById("reset").addEventListener("click", Game.initializeGame);
+
+            //Initialize game
+            Game.initializeGame();
+        </script>
+    </body>
+</html>

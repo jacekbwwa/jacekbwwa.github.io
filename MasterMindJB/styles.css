@@ -1,0 +1,152 @@
+/* author Jacek Byzdra https://www.linkedin.com/in/jacek-byzdra/ */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#secretcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+.keyrow {
+    display: grid;
+    grid-template-columns: repeat(2, 7px);
+    grid-template-rows: repeat(2, 7px);
+    gap: 5px;
+    margin: 0 0 0 10px;
+}
+
+.numrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+
+.secretcoderow{
+   display: flex;
+    justify-content: center;
+    margin: 0 0 0 5px;
+}
+
+.peg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.keypeg {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid #000;
+}
+
+.numpeg {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+.secretcodepeg{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 0 5px;
+}
+.secretcodemessage{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    margin: 0 0 0 5px;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#colorselection {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+.colorsel {
+    border-radius: 50%;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+#submitguess {
+    border-radius: 25px;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border-bottom: 5px solid #1e7b5c;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: linear-gradient(#32cd99, #28a47b);
+    box-shadow: 0px 2px 10px grey;
+    transition: 150ms ease;
+}
+#submitguess:active {
+    border: none;
+    border-bottom: 2px solid #1e7b5c;
+    box-shadow: 0px 1px 5px grey;
+    background: linear-gradient(#2db98a, #2fc190);
+    color: #fff;
+}
+#reset {
+    border-radius: 25px;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border-bottom: 5px solid #19608f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: linear-gradient(#3498db, #217dba);
+    box-shadow: 0px 2px 10px grey;
+    transition: 150ms ease;
+}
+#reset:active {
+    border: none;
+    border-bottom: 2px solid #19608f;
+    box-shadow: 0px 1px 5px grey;
+    background: linear-gradient(#2489cc, #2283c3);
+    color: #fff;
+}
+.top{
+    margin-bottom: 10px;
+}
