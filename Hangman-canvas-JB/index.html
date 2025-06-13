@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="description" content="Javascript Hangman game, canvas, grid container ">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Canvas">
+	<meta name="author" content="Jacek Byzdra">
+	<meta name="copyright" content="Copyright owner" >
+    <meta charset="UTF-8" >
+	<meta http-equiv="Content-Type" content="text/html" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hangman | Javascript | Canvas | Game</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href="style.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="purple">
+			<div id="innerpurple">
+				<div id="content"> Welcome to Hangman Game! by <a>JB</a>
+				</div>
+			</div>
+		</div>
+		<div class="yellow">
+			<div id="inneryellow">
+				<canvas id="canvasH" width="290" height="450"></canvas>
+			</div>
+
+		</div>
+		<div class="blue">
+			<div id="innerblue">
+				<div id="innerbl1">
+					<label class="labelWordtg">Word to guess:</label>
+					<output id="worhidden" name="worhidden" type="text"></output>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<button onclick="reset()">Reset</button>
+				</div>
+				<div>
+					<label class="largeInp" for="inputletter">
+						<p id="guesslet">Guess a letter:</p>
+					</label>
+					<input id='input1' placeholder="Enter a letter" name="name" />
+					<label class="labelChar">char:</label>
+					<output id="charin" name="charin" type="text"></output>
+				</div>
+				<div>
+					<label class="labelLives">Lives:</label>
+					<output id="livesout" name="livesout" type="number"></output>
+					&nbsp;
+					<label class="labelLettersIn">Letters used: </label>
+					<output id="lettersin" name="lettersin" type="text"></output>
+				</div>
+				<div>
+					<label class="labelStat">
+						<p id="gamestat"></p>
+					</label>
+					<output id="gamest" name="gamest" type="text"></output>
+				</div>
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">&copy; 2020 https://www.linkedin.com/in/jacek-byzdra/, all rights reserved.</div>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencja Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+	<br />This work is available under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International</a>
+	<script src='index.js'></script>
+</body>
+
+</html>
