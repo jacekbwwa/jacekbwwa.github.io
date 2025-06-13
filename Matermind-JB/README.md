@@ -1,7 +1,7 @@
 # Mastermind | Javascript | Game | Advanced
 
 ## Live Link
-https://jacekbwwa.github.io/MasterMindJB/index.html
+https://jacekbwwa.github.io/Matermind-JB/index.html
 
 ## Mastermind | Advanced Javascript Game , author: Jacek Byzdra  
 
