@@ -1,7 +1,7 @@
 # Tic-Tac-Toe | Javascript | Game | AI | minimax| alpha-beta prunning
 
 ## Live Link
-https://jacekbwwa.github.io/TicTacToeAiMiniMaxJB/index.html
+https://jacekbwwa.github.io/TicTacToe-AI-Minimax-JB/index.html
 
 ## Tic-Tac-Toe |  Advanced Javascript Game, with AI Minimax alpha-beta prunning, author: Jacek Byzdra  
 
