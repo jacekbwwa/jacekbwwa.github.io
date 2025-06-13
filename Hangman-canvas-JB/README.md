@@ -2,7 +2,7 @@
 ## Hangman game built in Javascript, with draw on the canvas With JavaScript.
 
 ## Live Link
-https://jacekbwwa.github.io/HangManCanvasJB/index.html
+https://jacekbwwa.github.io/Hangman-canvas-JB/index.html
 
 ## Description
 - The game is a words guessing game for one player. 
