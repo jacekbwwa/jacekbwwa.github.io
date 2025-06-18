@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Sudoku - Advanced Javascript Game" >
+    <meta name="keywords" content="HTML, JavaScript" >
+    <meta name="author" content="Jacek Byzdra" >
+    <meta name="copyright" content="Copyright owner" >
+    <meta charset="UTF-8" >
+    <meta http-equiv="Content-Type" content="text/html" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Sudoku | game | backtracking | algorithm | with | constraint propagation</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="styles.css" type="text/css" >
+  </head>
+  <body>
+        <div class="top">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+                ><img
+                    alt="License Creative Commons"
+                    style="border-width: 0"
+                    src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"
+            ></a>
+        </div>
+  <h1>Sudoku - advanced game </h1>
+  <h2>Backtracking | algorithm | with | constraint propagation</h2>
+    <div id="buttons" aria-label="Game controls">
+      <button id="easyBtn" type="button" aria-pressed="false">Easy</button>
+      <button id="mediumBtn" type="button" aria-pressed="false">Medium</button>
+      <button id="hardBtn" type="button" aria-pressed="false">Hard</button>
+    </div>
+    <div id="sudoku-container" aria-label="Sudoku board" role="grid" tabindex="0"></div>
+    <div id="buttons2" aria-label="Game controls">
+      <button id="hintBtn" type="button" aria-pressed="false" disabled>Hint</button>
+      <button id="solutionBtn" type="button" disabled>Solution</button>
+      <button id="restartBtn" type="button" disabled>Restart</button>
+      <button id="newBtn" type="button" disabled>New</button>
+    </div>
+    <div id="message" role="alert" aria-live="assertive"></div>
+    <script type="module" src="sudoku.js"></script>
+  </body>
+</html>
