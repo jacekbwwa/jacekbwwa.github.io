@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Chess - AI Javascript game with minimax alpha-beta pruning, position evaluation">
+        <meta name="keywords" content="HTML, JavaScript, Chess, AI, Minimax" >
+        <meta name="author" content="Jacek Byzdra" >
+        <meta name="copyright" content="Copyright owner" >
+        <meta charset="UTF-8" >
+        <meta http-equiv="Content-Type" content="text/html" >
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>AI | chess | game | two players | or | player vs AI | minimax | alpha-beta pruning | heuristics |evaluation</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+        <link rel="stylesheet" href="styles.css" type="text/css" >
+    </head>
+    <body>
+        <div class="top">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                <img
+                    alt="License Creative Commons"
+                    style="border-width: 0; max-width: 100%"
+                    src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" />
+            </a>
+        </div>
+        <h1>Chess with AI</h1>
+        <div id="game-container">
+            <div id="chessboard-container" aria-label="Chessboard" role="grid" aria-readonly="true">
+                <div id="board-squares"></div>
+            </div>
+            <div id="controls">
+                <div id="game-buttons">
+                    <button id="btn-two-players">Two Players</button> <button id="btn-pvAI">Player vs AI</button>
+                    <button id="btn-new-game" disabled>New Game</button> <button id="btn-undo" disabled>Undo</button>
+                    <button id="btn-resign" disabled>Resign</button> <button id="btn-save" disabled>Save as</button>
+                    <button id="btn-load">Load</button> <button id="btn-history" disabled>History</button>
+                    <button id="btn-restart">Restart</button>
+                </div>
+                <div id="info" aria-live="polite" aria-atomic="true"></div>
+                <div id="captured-container">
+                    <div>
+                        <div class="captured-label">White captured:</div>
+                        <div id="captured-white" class="captured-row"></div>
+                    </div>
+                    <div>
+                        <div class="captured-label">Black captured:</div>
+                        <div id="captured-black" class="captured-row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="history-modal" role="dialog" aria-modal="true" aria-labelledby="history-title" tabindex="-1">
+            <div id="history-content">
+                <h2 id="history-title">Game History</h2>
+                <pre id="history-text"></pre>
+                <button id="close-history">Close</button>
+            </div>
+        </div>
+        <div id="promotion-modal" role="dialog" aria-modal="true" aria-labelledby="promotion-title" tabindex="-1">
+            <div id="promotion-content">
+                <div id="promotion-title">Pawn Promotion - Choose piece:</div>
+                <div id="promotion-pieces">
+                    <div class="promotion-piece" data-piece="q" title="Queen">&#9813;</div>
+                    <div class="promotion-piece" data-piece="r" title="Rook">&#9814;</div>
+                    <div class="promotion-piece" data-piece="b" title="Bishop">&#9815;</div>
+                    <div class="promotion-piece" data-piece="n" title="Knight">&#9816;</div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="chess.js"></script>
+    </body>
+</html>
