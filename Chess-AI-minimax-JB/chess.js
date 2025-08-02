@@ -230,12 +230,12 @@
                     if (piece.color === "white") {
                         square.textContent = whiteSymbols[piece.type];
                         square.style.color = "white";
-                        square.style.fontWeight = "500";
+                        square.style.fontWeight = "600";
                         square.classList.remove("empty");
                     } else {
                         square.textContent = blackSymbols[piece.type];
                         square.style.color = "black";
-                        square.style.fontWeight = "500";
+                        square.style.fontWeight = "600";
                         square.classList.remove("empty");
                     }
                 } else {
@@ -1815,4 +1815,5 @@
 
     btnTwoPlayers.disabled = false;
     btnPvAI.disabled = false;
+
 })();
