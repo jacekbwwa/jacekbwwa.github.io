@@ -230,12 +230,12 @@
                     if (piece.color === "white") {
                         square.textContent = whiteSymbols[piece.type];
                         square.style.color = "white";
-                        square.style.fontWeight = "600";
+                        square.style.fontWeight = "700";
                         square.classList.remove("empty");
                     } else {
                         square.textContent = blackSymbols[piece.type];
                         square.style.color = "black";
-                        square.style.fontWeight = "600";
+                        square.style.fontWeight = "700";
                         square.classList.remove("empty");
                     }
                 } else {
@@ -1817,3 +1817,4 @@
     btnPvAI.disabled = false;
 
 })();
+
