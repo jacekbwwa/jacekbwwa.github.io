@@ -122,10 +122,10 @@ h1 {
 }
 
 .square.light {
-    background-color: #00a5a7;
+    background-color: #f0d9b5;
 }
 .square.dark {
-    background-color: #0053bb;
+    background-color: #b58863;
 }
 .square.highlight-move {
     box-shadow:
@@ -495,4 +495,5 @@ button:disabled {
         font-size: 4vw;
         line-height: 4vw;
     }
+
 }
