@@ -229,7 +229,7 @@
                 if (piece) {
                     if (piece.color === "white") {
                         square.textContent = whiteSymbols[piece.type];
-                        square.style.color = "white";
+                        square.style.color = "#f4fbff";
                         square.style.fontWeight = "700";
                         square.classList.remove("empty");
                     } else {
@@ -1817,4 +1817,5 @@
     btnPvAI.disabled = false;
 
 })();
+
 
