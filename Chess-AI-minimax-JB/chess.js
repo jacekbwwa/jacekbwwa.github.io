@@ -9,11 +9,11 @@
     const ranks = "12345678";
     const playerColors = ["white", "black"];
     const whiteSymbols = {
-        k: "\u2654", // King 
-        q: "\u2655", // Queen 
-        r: "\u2656", // Rook 
-        b: "\u2657", // Bishop 
-        n: "\u2658", // Knight 
+        k: "\u265A", // King 
+        q: "\u265B", // Queen 
+        r: "\u265C", // Rook 
+        b: "\u265D", // Bishop 
+        n: "\u265E", // Knight 
         p: "\u2659" // Pawn 
     };
     const blackSymbols = {
@@ -230,12 +230,12 @@
                     if (piece.color === "white") {
                         square.textContent = whiteSymbols[piece.type];
                         square.style.color = "#f4fbff";
-                        square.style.fontWeight = "700";
+                        square.style.fontWeight = "800";
                         square.classList.remove("empty");
                     } else {
                         square.textContent = blackSymbols[piece.type];
                         square.style.color = "black";
-                        square.style.fontWeight = "700";
+                        square.style.fontWeight = "800";
                         square.classList.remove("empty");
                     }
                 } else {
@@ -1817,5 +1817,6 @@
     btnPvAI.disabled = false;
 
 })();
+
 
 
