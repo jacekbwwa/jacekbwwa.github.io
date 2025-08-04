@@ -11,13 +11,13 @@ const PIECES_SYMBOLS = {
     R: "\u265C",
     B: "\u265D",
     N: "\u265E",
-    P: "\u265F",
+    P: "\u2659",
     k: "\u265A",
     q: "\u265B",
     r: "\u265C",
     b: "\u265D",
     n: "\u265E",
-    p: "\u265F"
+    p: "\u2659"
 };
 
 const PIECE_VALUES = {
@@ -1890,3 +1890,4 @@ initializeGame,
 createEmptyBoard
     
 };
+
