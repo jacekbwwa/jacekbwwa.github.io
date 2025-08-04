@@ -1,7 +1,7 @@
 # Chess | AI | AI vs AI | minimax | alpha-beta prunning | heuristics | position evaluation | Web Worker | Javascript | game 
 
 ## Live Link
-https://jacekbwwa.github.io/Chess-AI-minimax-JB/index.html
+https://jacekbwwa.github.io/Chess-AI-vs-AI-minimax-Web-Worker-JB/index.html
 
 ## Chess | AI vs AI Javascript Game with minimax alpha beta pruning, heuristic position evaluation, Web Worker,  author: Jacek Byzdra  
 
@@ -107,4 +107,5 @@ jacek.jaroslaw.byzdra@gmail.com
 ### License
 Privacy policy. This work is available under a Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 
