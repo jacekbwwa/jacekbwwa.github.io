@@ -1,4 +1,4 @@
-# Checkers | AI | minimax | alpha-beta prunning | multijumping | advanced | Javascript | game 
+# Checkers | AI | minimax | alpha-beta pruning | multijumping | advanced | Javascript | game 
 
 ## Live Link
 https://jacekbwwa.github.io/Checkers-multijump-AI-minimax-JB/index.html
@@ -6,7 +6,7 @@ https://jacekbwwa.github.io/Checkers-multijump-AI-minimax-JB/index.html
 ## Checkers | Advanced Javascript Game with Multijumping, author: Jacek Byzdra  
 
 ## Description general 
-- The project presents advanced Checkers game with AI minimax alpha-beta prunning and multijumping.  
+- The project presents advanced Checkers game with AI minimax alpha-beta pruning and multijumping.  
 - The game is designed for two  players (player vs AI).
 
 #### Board description:
@@ -48,7 +48,7 @@ https://jacekbwwa.github.io/Checkers-multijump-AI-minimax-JB/index.html
 
 ## Game phase 2  
 - Then the human player playing with the white pieces clicks on one of the empty squares marked with a light green border and that white piece is automatically moved to that selected square.
-- After the white player's move, the AI playing with the red pieces takes turn. AI automatically moves one of the selected pieces to the selected square. The AI move is calculated according to minimax alpha-beta prunning algorithm.
+- After the white player's move, the AI playing with the red pieces takes turn. AI automatically moves one of the selected pieces to the selected square. The AI move is calculated according to minimax alpha-beta pruning algorithm.
 
 ![Screenshot](screenshot2.png)
 
@@ -135,7 +135,7 @@ https://jacekbwwa.github.io/Checkers-multijump-AI-minimax-JB/index.html
 
 ## Code Explaination
 - All the code is in the JavaScript file (checkers.js). 
-- The code is based on JS ES6+ arrow functions where applicable, which reflects operations, complete game logic, initial setup for game start, piece selection, highlight movement and jumps for piece, highlight move and jumps for king,  move logic for standard move, for jump and for multi-jump, capturing, finding jump paths for king, event handler on piece and square, render board for UI update, swaping player in the end of turn, checking for piece to king change, AI search depth, block human clicks on AI turn, move Logic for AI, multi-jump generator for AI, minimax with alpha-beta prunning for AI best move and jumps. 
+- The code is based on JS ES6+ arrow functions where applicable, which reflects operations, complete game logic, initial setup for game start, piece selection, highlight movement and jumps for piece, highlight move and jumps for king,  move logic for standard move, for jump and for multi-jump, capturing, finding jump paths for king, event handler on piece and square, render board for UI update, swaping player in the end of turn, checking for piece to king change, AI search depth, block human clicks on AI turn, move Logic for AI, multi-jump generator for AI, minimax with alpha-beta pruning for AI best move and jumps. 
 - The integration between the JS and HTML is based on event handlers, UI updates, and board reset button.
 - The HTML sets up the DOM elements of the game: the game board, the title, text elements indicating turn status, captured pieces number, interactive elements for resetting the game, etc.
 - The CSS sets up layout  of this project, styles the board and pieces to visually represent a checkers game.
@@ -151,5 +151,6 @@ jacek.jaroslaw.byzdra@gmail.com
 ### License
 Privacy policy. This work is available under a Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 
 # Checkers-multijump-AI-minimax-JB
