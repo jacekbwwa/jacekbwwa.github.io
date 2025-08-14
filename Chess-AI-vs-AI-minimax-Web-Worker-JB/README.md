@@ -1,4 +1,4 @@
-# Chess | AI | AI vs AI | minimax | alpha-beta prunning | heuristics | position evaluation | Web Worker | Javascript | game 
+# Chess | AI | AI vs AI | minimax | alpha-beta pruning | heuristics | position evaluation | Web Worker | Javascript | game 
 
 ## Live Link
 https://jacekbwwa.github.io/Chess-AI-vs-AI-minimax-Web-Worker-JB/index.html
@@ -91,10 +91,10 @@ https://jacekbwwa.github.io/Chess-AI-vs-AI-minimax-Web-Worker-JB/index.html
   - Queen Immobility Control (queenstillness)) gives a bonus for not moving the queen during the opening phase.
   - Controlling attacks on adjacent squares of the AI king grants a bonus for attacking adjacent squares of the opposing AI king in the end phase. The bonus is greater when the AI player's king also participates in an attack on adjacent squares of the opposing AI king.
   - King Immobility Control (kingtillness)) gives a bonus for not moving the king during the opening phase (besides castling).
-- An advanced heuristic evaluation function is performed on each leaf of the minimax search algorithm with alpha-beta pruning (at depth zero). This significantly reduces the number of possible moves to be searched (selecting the best ones based on the heuristic evaluation). Due to the very complex heuristic evaluation function, the system performs a large number of operations, slightly delaying each move.
+- An advanced heuristic evaluation function is performed on each leaf of the minimax search algorithm with alpha-beta pruning. This significantly reduces the number of possible moves to be searched (selecting the best ones based on the heuristic evaluation). Due to the very complex heuristic evaluation function, the system performs a large number of operations, slightly delaying each move.
 - The integration between the JS and HTML is based on event handlers, UI updates, and board reset button.
 - The HTML sets up the DOM elements of the game: the game board, the title, text elements indicating turn status, captured pieces number, interactive elements for resetting the game, etc.
-- The CSS sets up layout  of this project, styles the board and pieces to visually represent a checkers game.
+- The CSS sets up layout  of this project, styles the board and pieces to visually represent a chess game.
 
 
 ### Author
@@ -107,5 +107,6 @@ jacek.jaroslaw.byzdra@gmail.com
 ### License
 Privacy policy. This work is available under a Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 
 
