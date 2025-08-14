@@ -1,4 +1,4 @@
-# Chess | AI | minimax | alpha-beta prunning | heuristics evaluation | Javascript | game 
+# Chess | AI | minimax | alpha-beta pruning | heuristics evaluation | Javascript | game 
 
 ## Live Link
 https://jacekbwwa.github.io/Chess-AI-minimax-JB/index.html
@@ -83,7 +83,7 @@ https://jacekbwwa.github.io/Chess-AI-minimax-JB/index.html
 - The piece-square tables are designed to promote piece behavior in various phases of the game. The opening phase promotes control of the center and castling. The middle phase promotes control of space, attacking the king, and securing one's own king. The end phase focuses on pawn promotion, attacking the king, and mate the king.
 - The integration between the JS and HTML is based on event handlers, UI updates, and board reset button.
 - The HTML sets up the DOM elements of the game: the game board, the title, text elements indicating turn status, captured pieces number, interactive elements for resetting the game, etc.
-- The CSS sets up layout  of this project, styles the board and pieces to visually represent a checkers game.
+- The CSS sets up layout  of this project, styles the board and pieces to visually represent a chess game.
 
 
 ### Author
@@ -96,4 +96,5 @@ jacek.jaroslaw.byzdra@gmail.com
 ### License
 Privacy policy. This work is available under a Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 
